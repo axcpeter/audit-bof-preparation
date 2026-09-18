@@ -25,6 +25,9 @@ The AUDIT effort aims to define interoperable protocol mechanisms and data model
   - RATS (remote attestation)
   - HTTP and W3C Trace Context (request correlation and propagation)
   - vCon (conversation record format)
+    - Verifiable Agent Conversation Records in the process of being adopted by the vCon WG
+    - The goal is to avoid overlap in data structures/models. Conversations happen human2human, human2agent, and agent2agent. There is high synergy between VACR and the vCon Core, as well as regulatory overlap how these are regulated (e.g., conversation ownership)
+    - Profiling a vCon-based VACR for audit is still mandatory as not all data captured in a record can be exposed to 3rd parties in every case, profiling and selective disclosure seem to be the most promising approaches
   - WIMSE (workload identifiers)
   - Non IETF protocols:
     -  SSF/CAEP and OpenTelemetry might provide useful building blocks such as https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/registry/attributes/gen-ai.md
