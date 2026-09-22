@@ -31,7 +31,7 @@ This includes:
 * Specify records format for capturing delegation chains, authorization state over time, and identity transitions
 * Enabling consistent interpretation and correlation of audit data across domains and across long-running or distributed workflows while preserving user privacy or other sensitive data by extending or adapting existing communication protocols
 * Specify mechanisms and protocols to collect, aggregate, verify, and transparency log records, potentially by a third-party, independent auditor
-
+* Specify mechanisms for evaluating pre-ingestion record freshness, sequence continuity, and temporal admission before application state mutation or audit-store persistence
 The working group will compose existing building blocks for identity (WIMSE), attestation (RATS), authorization (OAuth family), transparency logging (SCITT), context propagation (e.g. W3C Trace Context or other context identifiers), and privacy-protecting profiles of conversation containers (vCon), and will define only an architecture including interfaces to and profiles of the auditing components, as well as the additional protocol elements, data models, and best practices needed to make these compose coherently for the agent auditing case.
 
 The working group will not define auditing policies or compliance frameworks, but instead provide the technical building blocks needed to support them.
